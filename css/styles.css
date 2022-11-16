@@ -200,8 +200,6 @@ i {
   text-transform: uppercase;
 }
 
-/* Finalização das Areas de atuação */
-
 /* Sobre nós */
 #about {
   display: flex;
@@ -286,10 +284,7 @@ i {
   text-transform: uppercase;
 }
 
-/* Finalização da Area de sobre nós */
-
-/* Começo da seção de depoimentos */
-
+/* Depoimentos */
 #testimonials {
   display: flex;
   align-items: center;
@@ -322,12 +317,8 @@ i {
   width: 100px;
   height: 100px;
 }
-/* Final da seção de depoimentos */
 
-/* =================== - =========================== */
-
-/* Inicio da seção de colaboradores */
-
+/* Colaboradores */
 #team {
   position: relative;
   margin-bottom: 2rem;
@@ -370,11 +361,7 @@ i {
   margin: 0.5rem 0;
 }
 
-/* Final da seção de colaboradores */
-
-/* ======================= - ========================= */
-
-/* Inicio da seção de contato */
+/* Contato */
 #contact {
   background-color: var(--main-color);
   gap: 0;
@@ -429,9 +416,6 @@ i {
   background-color: var(--primary-text-color);
   color: var(--main-color);
 }
-/* Final da seção de contato */
-
-/* ======================== - =========================== */
 
 /* Rodapé */
 #footer {
@@ -518,10 +502,6 @@ i {
   color: var(--secondary-color);
 }
 
-/* Final da seção do rodapé */
-
-/* =========================== - =============================== */
-
 /* Mobile navbar */
 #menu,
 #close-menu {
@@ -540,12 +520,14 @@ i {
   position: fixed;
   top: 0;
   left: 100%;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   flex-direction: column;
   padding: 4rem 2rem;
   transition: 0.4s;
+  z-index: 5;
 }
 
 #mobile-navbar.menu-active {
@@ -563,9 +545,11 @@ i {
 
 /* Responsivo */
 @media (max-width: 450px) {
+  /* Geral */
   body {
     overflow-x: hidden;
   }
+
   i {
     padding: 1.5rem;
     font-size: 2rem;
